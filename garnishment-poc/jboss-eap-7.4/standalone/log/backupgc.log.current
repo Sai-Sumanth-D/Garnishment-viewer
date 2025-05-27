@@ -1,0 +1,19 @@
+OpenJDK 64-Bit Server VM (25.452-b09) for bsd-aarch64 JRE (Zulu 8.86.0.25-CA-macos-aarch64) (1.8.0_452-b09), built on Apr 11 2025 01:52:52 by "zulu_re" with gcc Apple LLVM 12.0.0 (clang-1200.0.32.28)
+Memory: 16k page, physical 8388608k(185744k free)
+
+/proc/meminfo:
+
+CommandLine flags: -XX:CompressedClassSpaceSize=260046848 -XX:GCLogFileSize=3145728 -XX:InitialHeapSize=1366294528 -XX:MaxHeapSize=1366294528 -XX:MaxMetaspaceSize=268435456 -XX:MetaspaceSize=100663296 -XX:NumberOfGCLogFiles=5 -XX:+PrintGC -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:-TraceClassUnloading -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseGCLogFileRotation -XX:+UseParallelGC 
+2025-05-23T11:53:08.439-0500: 0.967: [GC (Allocation Failure) [PSYoungGen: 334336K->22434K(389632K)] 334336K->22450K(1280000K), 0.0124244 secs] [Times: user=0.04 sys=0.01, real=0.02 secs] 
+2025-05-23T11:53:09.762-0500: 2.290: [GC (Allocation Failure) [PSYoungGen: 356770K->55282K(389632K)] 356786K->65602K(1280000K), 0.0421739 secs] [Times: user=0.07 sys=0.05, real=0.04 secs] 
+2025-05-23T12:23:45.357-0500: 1837.931: [GC (Allocation Failure) [PSYoungGen: 389618K->50202K(389632K)] 399938K->60539K(1280000K), 0.2005644 secs] [Times: user=0.14 sys=0.21, real=0.20 secs] 
+2025-05-23T13:08:15.547-0500: 4508.215: [GC (Allocation Failure) [PSYoungGen: 384538K->38302K(389632K)] 394875K->48646K(1280000K), 0.1244880 secs] [Times: user=0.27 sys=0.16, real=0.13 secs] 
+Heap
+ PSYoungGen      total 389632K, used 272265K [0x00000007d5580000, 0x00000007f0800000, 0x00000007f0800000)
+  eden space 334336K, 69% used [0x00000007d5580000,0x00000007e39fac08,0x00000007e9c00000)
+  from space 55296K, 69% used [0x00000007ed200000,0x00000007ef767928,0x00000007f0800000)
+  to   space 55296K, 0% used [0x00000007e9c00000,0x00000007e9c00000,0x00000007ed200000)
+ ParOldGen       total 890368K, used 10344K [0x000000079f000000, 0x00000007d5580000, 0x00000007d5580000)
+  object space 890368K, 1% used [0x000000079f000000,0x000000079fa1a2c8,0x00000007d5580000)
+ Metaspace       used 83587K, capacity 92944K, committed 93184K, reserved 1128448K
+  class space    used 11160K, capacity 13819K, committed 13824K, reserved 1048576K

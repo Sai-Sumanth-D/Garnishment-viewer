@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Garnishment Processing - PoC</title>
+  </head>
+
+  <body>
+    <h2>🔵 Add New Garnishment</h2>
+    <form onsubmit="addGarnishment(); return false;">
+      <label>Employee Name: <input type="text" id="employeeName" /></label
+      ><br />
+      <label>Amount: <input type="number" id="amount" step="0.01" /></label
+      ><br />
+      <label>Status: <input type="text" id="status" /></label><br />
+      <label
+        >Court Order Date (YYYY-MM-DD):
+        <input type="text" id="courtDate" /></label
+      ><br />
+      <label>Created By: <input type="text" id="createdBy" /></label><br />
+      <button type="submit">Add Garnishment</button>
+    </form>
+    <p id="addResponse"></p>
+
+    <hr />
+
+    <h2>🟢 Get Garnishment By Case ID</h2>
+    <label>Case ID: <input type="number" id="searchCaseId" /></label>
+    <button onclick="getGarnishment()">Search</button>
+    <div id="garnishmentDetails" style="margin-top: 10px"></div>
+
+    <pre id="garnishmentDetails"></pre>
+
+    <script src="dwr/engine.js"></script>
+    <script src="dwr/util.js"></script>
+    <script src="dwr/interface/GarnishmentController.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
